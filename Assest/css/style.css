@@ -1,0 +1,1185 @@
+@font-face {
+  font-family: NuevaL;
+  src: url(/Assest/fonts/NeueMachina-Light.ttf);
+}
+
+@font-face {
+  font-family: NuevaR;
+  src: url(/Assest/fonts/NeueMachina-Regular.ttf);
+}
+
+@font-face {
+  font-family: Juana;
+  src: url(/Assest/fonts/Fontspring-DEMO-juana.ttf);
+}
+
+@font-face {
+  font-family: HellR;
+  src: url(/Assest/fonts/HelveticaNowDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: HellL;
+  src: url(/Assest/fonts/HelveticaNowDisplay-Light_M4nzWhve6k_k7HolyzL10.ttf);
+}
+@font-face {
+  font-family: HellM;
+  src: url(/Assest/fonts/HelveticaNowDisplay-Medium_2wEhlmo-TD_wsqqEEwmJC.ttf);
+}
+@font-face {
+  font-family: HellB;
+  src: url(/Assest/fonts/HelveticaNowDisplay-Bold_VMHV5twUMR_2SBNfxj1ry.ttf);
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: NuevaR;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  width: 100%;
+  overflow: hidden;
+  background: #0c0c0c;
+}
+
+#page1 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#shadow {
+  pointer-events: none;
+  display: flex;
+  position: absolute;
+  width: 50%;
+  height: 55vh;
+  z-index: 9;
+  top: 5%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+}
+
+#box1 {
+  width: 30vw;
+  height: 40vh;
+  transform: Rotate(-32deg);
+  background: #144b3e;
+  filter: blur(60px);
+  border-radius: 15%;
+}
+
+#box2 {
+  width: 40vw;
+  height: 25vh;
+  filter: blur(60px);
+  background: #0e6651;
+}
+
+#box3 {
+  width: 20vw;
+  height: 20vh;
+  transform: Rotate(-32deg);
+  background: #0e6651;
+  filter: blur(200px);
+  position: absolute;
+  top: 220%;
+  left: 100%;
+}
+
+#btmshdwo {
+  pointer-events: none;
+  display: flex;
+  position: relative;
+  width: 50%;
+  height: 55vh;
+  z-index: 9;
+  top: 5%;
+  left: 48%;
+}
+#box4 {
+  width: 55vw;
+  height: 80vh;
+  /* transform: Rotate(-32deg); */
+  background: #0e6651;
+  filter: blur(200px);
+  position: absolute;
+  left: -180%;
+  top: -50%;
+}
+
+nav {
+  position: relative;
+  pointer-events: all;
+  z-index: 10; /* Lower z-index for nav */
+  padding: 2em 5em;
+  width: 100%;
+  height: 6vh;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+#fst {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+#fst span {
+  font-size: 0.9vw;
+  color: #d6d6d6;
+  cursor: pointer;
+}
+
+#fst img {
+  cursor: pointer;
+  width: 2.5vh;
+}
+
+#snd {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4em;
+}
+
+#snd span {
+  cursor: pointer;
+  font-size: 0.9vw;
+  color: #d6d6d6;
+}
+
+#snd a {
+  border-radius: 4px;
+  padding: 0.6em 1.3em;
+  font-size: 1rem;
+  background: #27e0b3;
+  color: #000000e8;
+  font-weight: 600;
+  font-family: HellR;
+  cursor: pointer;
+}
+#three {
+  display: none;
+}
+
+#hero {
+  width: 100%;
+  height: calc(100vh - 7vh);
+}
+
+#heading {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 60%;
+  height: 80vh;
+  line-height: 1;
+}
+
+#heading h1 {
+  font-family: NuevaR;
+  font-size: 4.5vw;
+  font-weight: 400;
+  color: #e9e9e9;
+}
+
+#heading h1 span {
+  color: #24cfa6;
+}
+
+#heading h1 .fnt {
+  font-family: Juana;
+  color: #e9e9e9;
+}
+
+#heading a {
+  margin-top: 1em;
+  padding: 0.6em 1em;
+  font-size: 1.2rem;
+  background: #27e0b3;
+  color: #000000;
+  border-radius: 8px;
+  font-family: HellR;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#smlheading {
+  position: absolute;
+  width: 14%;
+  right: 20%;
+  bottom: 35%;
+  width: 12%;
+}
+
+#smlheading span {
+  font-size: 1rem;
+  font-family: HellR;
+  color: #bebebe;
+}
+
+#smlheading .fnt {
+  color: #22bb96;
+}
+
+#herobtm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10em;
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  height: 10vh;
+}
+
+#herobtm h2 {
+  font-family: HellR;
+  font-weight: 700;
+  font-size: 2vw;
+  color: #e9e9e9;
+}
+
+#herobtm p {
+  font-family: NuevaR;
+  font-weight: 400;
+  font-size: 1vw;
+  color: #c5c5c5;
+}
+
+#page2 {
+  overflow: hidden;
+  width: 100%;
+  height: 110vh;
+}
+
+#p2head {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#p2head span {
+  font-size: 2.5vw;
+  color: #e9e9e9;
+}
+
+#p2head #fnt3 {
+  color: #24cfa6;
+}
+
+#frame {
+  margin: 0 auto;
+  width: 55%;
+  height: 60%;
+  border-radius: 20px;
+  margin-bottom: 1.5em;
+}
+
+#frame iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+#page2 #btn {
+  width: 100%;
+  height: 10vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+#btn a {
+  padding: 0.8vw 2vw;
+  background: #24cfa6;
+  font-size: 1.2vw;
+  text-decoration: none;
+  color: #000000;
+  border-radius: 10px;
+  font-weight: 500;
+  font-family: HellR;
+}
+
+#page3 {
+  width: 100%;
+  height: 110vh;
+}
+
+#course {
+  padding: 2em 5em;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 20vh;
+}
+
+#course span {
+  font-size: 2.5vw;
+  color: #e4e4e4;
+  font-weight: 300;
+}
+
+#container {
+  padding: 2em 5em;
+  display: flex;
+  gap: 1em;
+  width: 100%;
+  height: 80vh;
+}
+
+.sub-cont {
+  border-radius: 12px;
+  width: 24%;
+  height: 100%;
+}
+
+.box {
+  border-radius: 16px;
+  width: 100%;
+  height: 90%;
+  background: #1e1e1e;
+}
+
+.img {
+  width: 100%;
+  height: 35%;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.title {
+  position: relative;
+  padding: 1.5em 2em;
+  width: 100%;
+  height: 30%;
+}
+
+.line {
+  margin: 0 1em 0 1em;
+  border-bottom: 1px solid #4f4f4f;
+}
+
+.title h2 {
+  font-size: 1.4vw;
+  font-weight: 400;
+  font-family: HellR;
+  color: #e4e4e4;
+  margin-bottom: 0.5em;
+}
+
+.title p {
+  width: 80%;
+  font-size: 0.83vw;
+  font-family: HellL;
+  font-weight: 300;
+  color: #7c7c7c;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  width: 100%;
+  height: 15%;
+}
+
+.skills span {
+  padding: 1em 1em;
+  background: #121212;
+  font-size: 1rem;
+  border-radius: 4px;
+  font-family: HellR;
+  font-weight: 400;
+  color: #d8d8d8;
+}
+
+.tutor {
+  margin-top: 1em;
+  padding: 1.5em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10%;
+  background: #121212;
+}
+
+.tutor p {
+  font-size: 0.83vw;
+  font-family: HellR;
+  font-weight: 400;
+  color: #707070;
+}
+
+.tutor span {
+  font-size: 1vw;
+  font-family: HellR;
+  font-weight: 400;
+  color: #e4e4e4;
+}
+
+.buy {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 8%;
+  border-radius: 12px;
+  background: #24cfa6;
+  cursor: pointer;
+}
+
+.buy a {
+  font-size: 1.5vw;
+  font-family: HellR;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000000;
+  border-radius: 12px;
+}
+.Coming {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 8%;
+  border-radius: 12px;
+  background: #9e9e9e;
+  cursor: pointer;
+}
+
+.Coming a {
+  font-size: 1.5vw;
+  font-family: HellR;
+  font-weight: 600;
+  text-decoration: none;
+  color: #202020;
+  border-radius: 12px;
+}
+
+#page4 {
+  width: 100%;
+  height: 100vh;
+}
+
+#p4heading {
+  margin: 10em 0em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 15%;
+  line-height: 1;
+}
+
+#p4heading span {
+  font-size: 2.5vw;
+  font-weight: 300;
+  text-align: center;
+  font-family: NuevaR;
+  color: #e9e9e9;
+}
+
+#p4heading #fnt5 {
+  color: #24cfa6;
+}
+
+#imgs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2em;
+  width: 100%;
+  height: 65%;
+}
+
+#img1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 30%;
+}
+
+#img2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 30%;
+}
+
+#explore {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#explore a {
+  text-decoration: none;
+  font-family: HellR;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-radius: 12px;
+  padding: 0.7em 1em;
+  color: black;
+  background: #24cfa6;
+}
+
+footer {
+  width: 100%;
+  height: 70vh;
+}
+
+#tfoot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 85%;
+}
+
+#logo {
+  width: 20%;
+  height: 50%;
+}
+#logoimg {
+  margin-bottom: 1em;
+}
+
+#logoimg img {
+  width: 15%;
+}
+
+#logo span {
+  font-size: 0.9vw;
+  font-family: HellR;
+  font-weight: 400;
+  color: #e9e9e9;
+}
+
+#socials {
+  display: flex;
+  gap: 1.5em;
+  margin-top: 1em;
+}
+
+#socials i {
+  font-size: 1.6vw;
+  color: #e9e9e9;
+}
+
+#company {
+  width: 20%;
+  height: 50%;
+}
+
+#cmpny h1 {
+  font-size: 1.2vw;
+  font-family: HellR;
+  font-family: 700;
+  color: #e9e9e9;
+  text-transform: uppercase;
+}
+
+#ctg {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+#ctg a {
+  margin-top: 1em;
+  text-decoration: none;
+  font-family: HellL;
+  font-weight: 300;
+  font-size: 0.9vw;
+  color: #e9e9e9;
+}
+
+#cmunity {
+  width: 20%;
+  height: 50%;
+}
+
+#cum h1 {
+  font-size: 1.2vw;
+  font-family: HellR;
+  font-family: 700;
+  color: #e9e9e9;
+  text-transform: uppercase;
+}
+
+#cmtg {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+#cmtg a {
+  margin-top: 1em;
+  text-decoration: none;
+  font-family: HellL;
+  font-weight: 300;
+  font-size: 0.9vw;
+  color: #e9e9e9;
+}
+
+#git {
+  width: 20%;
+  height: 50%;
+}
+
+#Gt h1 {
+  font-size: 1.2vw;
+  font-family: HellR;
+  font-family: 700;
+  color: #e9e9e9;
+  text-transform: uppercase;
+}
+
+#gtg {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+#gtg a {
+  margin-top: 1em;
+  text-decoration: none;
+  font-family: HellL;
+  font-weight: 300;
+  font-size: 0.9vw;
+  color: #e9e9e9;
+}
+
+#bfoot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 10vh;
+  line-height: 1;
+}
+
+#bfoot h1 {
+  font-size: 1vw;
+  font-family: HellR;
+  font-weight: 700;
+}
+
+@media screen and (width<= 1366px) {
+  #fst span {
+    font-size: 1em;
+    color: #d6d6d6;
+    cursor: pointer;
+  }
+
+  #snd span {
+    cursor: pointer;
+    font-size: 0.8em;
+    color: #d6d6d6;
+  }
+
+  #snd a {
+    font-size: 0.9em;
+  }
+
+  #smlheading {
+    position: absolute;
+    right: 15%;
+    bottom: 30%;
+    width: 15%;
+  }
+
+  #smlheading span {
+    font-size: 0.8rem;
+    font-family: HellR;
+    font-weight: 500;
+    color: #bebebe;
+  }
+
+  .skills span {
+    padding: 0.6em 0.4em;
+    font-size: 0.8em;
+  }
+
+  .title h2 {
+    font-size: 1em;
+    font-weight: 400;
+    font-family: HellR;
+    color: #e4e4e4;
+    margin-bottom: 0.5em;
+  }
+
+  .title p {
+    width: 80%;
+    font-size: 0.7em;
+    font-family: HellL;
+    font-weight: 500;
+    color: #7c7c7c;
+  }
+}
+
+#hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  #snd {
+    display: none;
+  }
+
+  #three {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0%;
+    right: -100%;
+    background: #111;
+    z-index: 20; /* Higher z-index for #three */
+  }
+
+  #close {
+    width: 100%;
+    height: 8%;
+    align-items: center;
+    justify-content: end;
+    padding-right: 1em;
+    display: flex;
+  }
+
+  #close i {
+    font-size: 1.5em;
+  }
+
+  #thresnd {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 3em;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #thresnd span,
+  a {
+    font-size: 1.5em;
+    text-transform: uppercase;
+  }
+  #line {
+    width: 100%;
+    border-bottom: 2px solid gray;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  #hamburger i {
+    font-size: 1.5em;
+  }
+
+  nav {
+    padding: 2em 1em;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #fst {
+    gap: 0.7em;
+  }
+
+  #fst img {
+    width: 7vw;
+  }
+
+  #fst span {
+    width: 70%;
+    line-height: 1;
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+
+  #shadow {
+    display: none;
+  }
+
+  #heading {
+    padding: 2em 1em;
+    margin-top: -5em;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+  }
+
+  #heading h1 {
+    font-size: 3em;
+  }
+
+  #heading a {
+    font-weight: 500;
+  }
+
+  #smlheading {
+    display: none;
+  }
+
+  #herobtm {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0em;
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    height: 10vh;
+  }
+
+  #herobtm h2 {
+    text-align: center;
+    font-family: HellR;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #e9e9e9;
+  }
+
+  #herobtm p {
+    font-family: NuevaR;
+    font-weight: 400;
+    font-size: 0.9em;
+    color: #c5c5c5;
+  }
+
+  /* page 2  */
+
+  #p2head {
+    padding: 1em 2em;
+  }
+
+  #p2head span {
+    text-align: center;
+    font-size: 1.2em;
+    color: #e9e9e9;
+  }
+
+  #frame {
+    padding: 2em 0.7em;
+    /* margin: 0 auto; */
+    width: 100%;
+    height: 35%;
+    border-radius: 8px;
+    /* margin-bottom: 1.5em; */
+  }
+
+  #page2 #btn {
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  #btn a {
+    padding: 0.8em 2em;
+    background: #24cfa6;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 10px;
+    font-weight: 500;
+    font-family: HellR;
+  }
+
+  /* page 3 */
+
+  #page3 {
+    width: 100%;
+    height: 100vh;
+  }
+
+  #course {
+    padding: 2em 1em;
+  }
+
+  #course span {
+    font-size: 1.5em;
+  }
+
+  #container {
+    padding: 1em 1em;
+    display: flex;
+    gap: 1em;
+    width: 100%;
+    height: 80vh;
+    overflow-x: scroll;
+  }
+
+  .sub-cont {
+    flex-shrink: 0;
+    width: 90%;
+    height: 100%;
+  }
+
+  .title {
+    padding: 2em 1.5em;
+  }
+
+  .title h2 {
+    font-size: 1.2em;
+  }
+
+  .title p {
+    font-size: 0.83em;
+  }
+
+  .skills {
+    gap: 1em;
+  }
+
+  .skills span {
+    padding: 0.5em 0.5em;
+    background: #121212;
+    font-size: 1rem;
+  }
+
+  .tutor p {
+    font-size: 0.83em;
+  }
+
+  .tutor span {
+    font-size: 1em;
+  }
+
+  .buy a {
+    font-size: 1.1em;
+  }
+
+  .Coming a {
+    font-size: 1.1em;
+  }
+
+  /* page 4 */
+
+  #page4 {
+    width: 100%;
+    height: 70vh;
+  }
+
+  #p4heading {
+    margin-top: 5em;
+  }
+
+  #p4heading span {
+    font-size: 1.5em;
+  }
+
+  #p4heading #fnt5 {
+    font-size: 1.1em;
+  }
+
+  #img1 {
+    align-items: center;
+  }
+
+  #img1 img {
+    width: 4.5em;
+    height: 4.5em;
+  }
+
+  #img2 {
+    align-items: center;
+  }
+
+  #img2 img {
+    width: 4.5em;
+    height: 4.5em;
+  }
+
+  #explore a {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  /* footer */
+
+  footer {
+    width: 100%;
+    height: 110vh;
+  }
+
+  #tfoot {
+    padding: 1em 2em;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+    width: 100%;
+    height: 85%;
+  }
+
+  #logo {
+    width: 70%;
+    height: 50%;
+  }
+  #logoimg {
+    margin-bottom: 0em;
+  }
+
+  #logoimg img {
+    width: 18%;
+  }
+
+  #logo span {
+    font-size: 0.8em;
+    font-family: HellR;
+    font-weight: 500;
+    color: #e9e9e9;
+  }
+
+  #socials {
+    margin-top: 0.5em;
+  }
+
+  #socials i {
+    font-size: 1.2em;
+    color: #e9e9e9;
+  }
+
+  #company {
+    width: 50%;
+    height: 50%;
+  }
+
+  #cmpny h1 {
+    font-size: 1.2em;
+    font-family: HellR;
+    font-family: 700;
+    color: #e9e9e9;
+    text-transform: uppercase;
+  }
+
+  #ctg {
+    margin-top: 0em;
+  }
+
+  #ctg a {
+    margin-top: 0.3em;
+    text-decoration: none;
+    font-family: HellL;
+    font-weight: 300;
+    font-size: 0.9em;
+    color: #e9e9e9;
+  }
+
+  #cmunity {
+    width: 50%;
+    height: 50%;
+  }
+
+  #cum h1 {
+    font-size: 1.2em;
+    font-family: HellR;
+    font-family: 700;
+    color: #e9e9e9;
+    text-transform: uppercase;
+  }
+
+  #cmtg {
+    margin-top: 0em;
+  }
+
+  #cmtg a {
+    margin-top: 0.3em;
+    text-decoration: none;
+    font-family: HellL;
+    font-weight: 300;
+    font-size: 0.9em;
+    color: #e9e9e9;
+  }
+
+  #git {
+    width: 50%;
+    height: 50%;
+  }
+
+  #Gt h1 {
+    font-size: 1.2em;
+    font-family: HellR;
+    font-family: 700;
+    color: #e9e9e9;
+    text-transform: uppercase;
+  }
+
+  #gtg {
+    margin-top: 0em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #gtg a {
+    margin-top: 1em;
+    text-decoration: none;
+    font-family: HellL;
+    font-weight: 300;
+    font-size: 0.9em;
+    color: #e9e9e9;
+  }
+
+  #bfoot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 10vh;
+    line-height: 1;
+  }
+
+  #bfoot h1 {
+    font-size: 1em;
+    font-family: HellR;
+    font-weight: 700;
+  }
+
+  #bfoot {
+    line-height: 0.5;
+  }
+
+  #bfoot h1 {
+    font-size: 1em;
+    font-weight: 600;
+  }
+}
